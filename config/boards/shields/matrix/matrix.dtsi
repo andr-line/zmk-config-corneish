@@ -5,10 +5,9 @@
 
 / {
     chosen {
-        zmk,kscan = &kscan0;
-        zmk,matrix_transform_left = &default_transform_left;
-        zmk,matrix_transform_right = &default_transform_right;
-    };
+    zmk,overlay-matrix-left = &matrix_left;
+    zmk,overlay-matrix-right = &matrix_right;
+  };
 
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
