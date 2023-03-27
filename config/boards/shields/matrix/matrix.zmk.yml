@@ -1,0 +1,12 @@
+file_format: "1"
+id: matrix
+name: Matrix
+type: shield
+url: https://github.com/andr-line/zmk-config-corneish
+requires: [nice_nano_v2]
+exposes: [i2c_oled]
+features:
+  - keys
+siblings:
+  - matrix_left
+  - matrix_right
