@@ -5,8 +5,8 @@
 
 / {
     chosen {
-    zmk,overlay-matrix-left = &matrix_left;
-    zmk,overlay-matrix-right = &matrix_right;
+    zmk,overlay-matrix-left = &matrix_left_transform;
+    zmk,overlay-matrix-right = &matrix_right_transform;
   };
 
     default_transform: keymap_transform_0 {
