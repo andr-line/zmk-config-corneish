@@ -13,29 +13,19 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-// ------------------------------------------------------------------
-// |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
-// |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
-// |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
-//             | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
-   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P
-   &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI
-   &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH
-        &kp LGUI &mo 1 &kp SPACE   &kp RET &mo 2 &kp RALT
+&kp Q      &kp W      &kp E      &kp R      &kp T      &kp Z      &kp U      &kp I      &kp O      &kp P
+&kp A      &kp S      &kp D      &kp F      &kp G      &kp H      &kp J      &kp K      &kp L      &kp TAB
+&kp TAB    &kp Y      &kp X      &kp C      &kp V      &kp B      &kp N      &kp M      &kp DOT    &kp RET
+                      &kp LGUI   &mo 1      &kp SHIFT  &kp SPACE  &kp DELETE &mo 2
                         >;
                 };
                 lower_layer {
-// -----------------------------------------------------------------
-// |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |
-// | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |
-// |     |     |     |     |     |   |     |     |     |     |     |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-   &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0
-   &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans
-   &trans       &trans       &trans       &trans       &trans         &trans   &trans   &trans &trans    &trans
-                             &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+&kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp KP_DIVIDE &kp KP_N7  &kp KP_N8  &kp KP_N9  &kp KP_ASTERISK
+&bt BT_SEL &bt BT_SEL &bt BT_SEL &bt BT_SEL &bt BT_SEL &kp KP_EQUAL &kp KP_N4  &kp KP_N5  &kp KP_N6  &kp KP_PLUS
+&trans     &trans     &trans     &trans     &trans     &kp KP_MINUS &kp KP_N1  &kp KP_N2  &kp KP_N3  &kp RET
+           &kp LGUI   &trans     &kp SPACE  &kp SHIFT  &kp DELETE &kp KP_N0
                         >;
                 };
 
