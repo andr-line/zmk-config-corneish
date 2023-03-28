@@ -9,28 +9,32 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
+        combos {
+                compatible = "zmk,combos";
+                combo_leftreset {
+                        timeout-ms = <1000>;
+                        key-positions = <0 16 17>;
+                        bindings = <&reset>;
+                };
+                combo_rightreset {
+                        timeout-ms = <1000>;
+                        key-positions = <18 34 35>;
+                        bindings = <&reset>;
+                };
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
                 default_layer {
-// ------------------------------------------------------------------
-// |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  |
-// |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |
-// |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,  |  .  |  /  |
-//             | GUI | LWR | SPC |   | ENT | RSE  | ALT |
                         bindings = <
 &kp Q           &kp W           &kp E           &kp R           &kp T           &kp Z           &kp U           &kp I           &kp O           &kp P
 &kp A           &kp S           &kp D           &kp F           &kp G           &kp H           &kp J           &kp K           &kp L           &kp ENTER
 &trans          &kp Y           &kp X           &kp C           &kp V           &kp B           &kp N           &kp M           &kp DOT         &kp TAB
-                                &kp LGUI        &mo 1           &kp LEFT_SHIFT  &kp SPACE       &kp BACKSPACE   &mo 2
+                                &kp LGUI        &mo 1           &kp LEFT_SHIFT  &kp SPACE       &kp BACKSPACE   &kp RIGHT_CONTROL
                         >;
                 };
                 lower_layer {
-// -----------------------------------------------------------------
-// |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  |
-// | BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |
-// |     |     |     |     |     |   |     |     |     |     |     |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
 &kp N1          &kp N2          &kp N3          &kp N4          &kp N5          &kp N6          &kp N7          &kp N8          &kp N9          &kp N0
 &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4    &kp LEFT        &kp DOWN        &kp UP          &kp RIGHT       &trans
@@ -40,13 +44,8 @@
                 };
 
                 raise_layer {
-// -----------------------------------------------------------------
-// |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  |
-// |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |
-// |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |
-//             | GUI |     | SPC |   | ENT |     | ALT |
                         bindings = <
-&reset          &trans          &trans          &trans          &bootloader     &bootloader     &trans          &kp UP_ARROW    &trans          &reset
+&trans          &trans          &trans          &trans          &trans          &bootloader     &trans          &kp UP_ARROW    &trans          &reset
 &trans          &trans          &trans          &trans          &trans          &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp LEFT_ARROW  &trans
 &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans
                                 &kp LGUI        &trans          &kp LEFT_SHIFT  &kp SPACE       &kp BACKSPACE   &kp RALT
