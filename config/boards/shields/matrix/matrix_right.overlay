@@ -1,4 +1,4 @@
-#include "piano.dtsi"
+#include "matrix.dtsi"
 
 &default_transform {
 	col-offset = <9>;
