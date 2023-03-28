@@ -9,6 +9,20 @@
     zmk,overlay-matrix-right = &matrix_right_transform;
   };
 
+&matrix_left_transform {
+    compatible = "zmk,matrix-transform";
+    col-offset = <0>;
+    rows = <1>;
+    columns = <18>;
+};
+
+&matrix_right_transform {
+    compatible = "zmk,matrix-transform";
+    col-offset = <18>;
+    rows = <1>;
+    columns = <18>;
+};
+
     default_transform: keymap_transform_0 {
         compatible = "zmk,matrix-transform";
         columns = <36>;
