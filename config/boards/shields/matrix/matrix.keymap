@@ -18,12 +18,12 @@
                 combo_leftreset {
                         timeout-ms = <1000>;
                         key-positions = <0 16 17>;
-                        bindings = <&reset>;
+                        bindings = <&kp ENTER>;
                 };
                 combo_rightreset {
                         timeout-ms = <1000>;
                         key-positions = <18 34 35>;
-                        bindings = <&reset>;
+                        bindings = <&kp ENTER>;
                 };
         };
 
