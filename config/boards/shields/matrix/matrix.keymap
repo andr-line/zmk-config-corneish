@@ -49,7 +49,7 @@
 
                 raise_layer {
                         bindings = <
-&trans          &trans          &trans          &trans          &trans          &bootloader     &trans          &kp UP_ARROW    &trans          &reset
+&trans          &trans          &trans          &trans          &trans          &bootloader     &trans          &kp UP_ARROW    &trans          &trans
 &trans          &trans          &trans          &trans          &trans          &trans          &kp LEFT_ARROW  &kp DOWN_ARROW  &kp LEFT_ARROW  &trans
 &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans          &trans
                                 &kp LGUI        &trans          &kp LEFT_SHIFT  &kp SPACE       &kp BACKSPACE   &kp RALT
