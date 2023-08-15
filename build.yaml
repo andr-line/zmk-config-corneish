@@ -14,8 +14,8 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: matrix_right
+    shield: matrix_left
   - board: nice_nano_v2
-    shield: left
+    shield: matrix_right
   - board: nice_nano_v2
     shield: settings_reset
