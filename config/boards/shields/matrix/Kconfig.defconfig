@@ -10,9 +10,6 @@ endif
 
 if SHIELD_MATRIX_LEFT || SHIELD_MATRIX_RIGHT
 
-config ZMK_SPLIT_ROLE_CENTRAL
-    default y
-
 config ZMK_SPLIT
     default y
 
