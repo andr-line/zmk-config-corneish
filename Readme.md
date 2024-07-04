@@ -6,6 +6,11 @@ This is my first keyboard, it‘s not perfect. The pcb does not include an off s
 
 The files are adapted to me, the bottom keys for example are shifted by one since I always typed like that. Also one of my controllers was faulty so I had to add an additional pin that is not needed normaly (pin 101).
 
+## Unimportant
+Recently I found the [36 key keyboard by dilshod](https://github.com/dilshod/36-choc-key-ortholinear-split) which is basically the same keyboard but with better execution. I am also planning on making a new version / revision that uses the kailh PG1316S switches (that are not yet commonly available as far as I know) as seen in [mikeholschers mikefive](https://github.com/mikeholscher/zmk-config-mikefive) keyboard as they could potentially reduce the thickness greatly.
+
+[Keymap editor by nickcoutsos](https://nickcoutsos.github.io/keymap-editor/)
+
 ## Final product
 The keyboard looks like this, with an iPhone 11 for size comparison. 
 
