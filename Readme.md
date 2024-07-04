@@ -11,6 +11,13 @@ Recently I found the [36 key keyboard by dilshod](https://github.com/dilshod/36-
 
 [Keymap editor by nickcoutsos](https://nickcoutsos.github.io/keymap-editor/)
 
+## Building instructions
+You will need 36 choc v1 (Kailh 1350) switches, two nice!nano controllers, two batteries as recommended on the [nice!keyboards](https://nicekeyboards.com) site (I used the 301230 battery found on aliexpress as it fits nicely underneath the nice!nanos) and the machine pins to mount the nice!nano controllers to the board.
+
+On the side where the silk screen (labels of the controllers pins) on the board are on top (will be covered by the battery) you have to solder the solder bridges as indicated by their frames. On the other board (where the silk screen is on the bottom) you have to solder them in the other way (solder the middle pad to the one that is not in the same frame). Then you have to solder the nice!nanos and batteries, and finally solder all the switches. Make sure that all solder connections are good.
+
+If you haven't flashed the firmware yet, do it now and test if it works. You can connect each half via usb cable to test the hardware. If for some reason one of the pins of the nice!nano should breake (as was the case for me) you can use the 101, 102 and 107 pins in the middle of the nice!nano as backup (and change the files accordingly). To connect the two halves together you must reset them at the same time. This is very difficult without a reset button **hence you should add one** before ordering the pcbs. I managed to do it by bridging the reset pin using a pair of metal scissors on both halves simultaneously. Once this has worked you should be good to go. I recommend the above keymap editor to configure the keymap as it greatly simplifies the process.
+
 ## Final product
 The keyboard looks like this, with an iPhone 11 for size comparison. 
 
